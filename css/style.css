@@ -303,3 +303,31 @@ body{
 .footer .bottom a[title=linkedin]{
 	background: url("../icons/linkedin.png");
 }
+@media screen and (max-width:1023px){
+	.banner{
+		height: 60vh;
+	}
+	.section1{
+		padding: 30px 0;
+	}
+	.section1 .content{
+		flex-direction: column;
+	}
+	.section2 .content{
+		justify-content: space-around;
+	}
+	.section2 .content .box{
+		flex-basis: 50%;
+		margin: 20px 0;
+	}
+	.footer .content{
+		text-align: center;
+	}
+	.footer .content .box{
+		flex-basis: 50%;
+		margin: 20px 0;
+	}
+	.footer .bottom{
+		text-align: center;
+	}
+}
