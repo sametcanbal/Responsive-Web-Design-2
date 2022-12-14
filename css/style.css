@@ -1,0 +1,305 @@
+/* CSS Document */
+/* Start of reset codes */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/* End of reset codes */
+:root{
+	--white: #fff;
+	--light-gray: #B8B8B8;
+	--gray: #828282;
+	--deep-sky-blue: #00A6F7;
+	--light-sky-blue: #5ACEFF;
+	--white-smoke: #F5F5F5;
+	--light-black: #424242;
+}
+body{
+	font-family: 'EB Garamond', serif; /* Weight 400, 700 */
+	font-size: 16px;
+}
+.container{
+	width: 100%;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url("../images/overlay.png"), url("../images/banner.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+.banner .header{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+.banner .header h1{
+	font-size: 2.5em;
+	color: var(--white);
+	letter-spacing: 5px;
+}
+.banner .main-menu ul li {
+	display: block;
+	float: left;
+	padding: 0 30px;
+}
+.banner .main-menu ul li a{
+	font-size: 2em;
+	color: var(--light-gray);
+}
+.banner .main-menu ul li a:hover{
+	color: var(--white);
+	transition: color 0.5s ease;
+}
+.banner .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+}
+.banner .content h2{
+	font-size: 3.5em;
+	color: var(--white);
+	margin-bottom: 20px;
+}
+.banner .content p{
+	font-size: 2em;
+	color: var(--white);
+	margin-bottom: 40px;
+}
+.blue-btn{
+	width: 260px;
+	height: 60px;
+	font-size: 1.5em;
+	color: var(--white);
+	background-color: var(--deep-sky-blue);
+	cursor: pointer;
+	border: none;
+	border-radius: 9999px;
+}
+.blue-btn:hover{
+	background-color: var(--light-sky-blue);
+	transition: all 0.5s ease;
+}
+.section1{
+	width: 100%;
+	padding: 80px 0;
+	background-color: var(--white-smoke);
+	text-align: center;
+}
+.section1 h2{
+	font-size: 3.5em;
+	color: var(--light-black);
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.section1 h2+p{
+	font-size: 2em;
+	color: var(--gray);
+	margin-bottom: 30px;
+}
+.section1 .content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.section1 .content .box{
+	flex-basis: 300px;
+	background-color: var(--white);
+	padding: 20px;
+	box-sizing: border-box;
+}
+.section1 .content .box img{
+	width: 120px;
+	height: 120px;
+	margin: 10px 0;
+}
+.section1 .content .box h3{
+	font-size: 2em;
+	color: var(light-black);
+	margin-bottom: 10px;
+}
+.section1 .content .box p{
+	font-size: 1.5em;
+	color: var(--gray);
+}
+.section2{
+	width: 100%;
+	padding: 80px 0;
+	text-align: center;
+}
+.section2 h2{
+	font-size: 3.5em;
+	color: var(--light-black);
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.section2 h2+p{
+	font-size: 2em;
+	color: var(--gray);
+	margin-bottom: 80px;
+}
+.section2 .content{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 0 auto 50px;
+	padding: 50px 0;
+	border-top: 1px solid var(--light-gray);
+	border-bottom: 1px solid var(--light-gray);
+}
+.section2 .content .box{
+	flex-basis: 250px;
+}
+.section2 .content .box img{
+	width: 100px;
+	height: 100px;
+}
+.section2 .content .box h3{
+	font-size: 1.5em;
+	color: var(--light-black);
+	text-transform: capitalize;
+}
+.section2 .content .box p{
+	font-size: 1.4em;
+	color: var(--gray);
+}
+.section2 article p{
+	font-size: 1.5em;
+	margin-bottom: 40px;
+}
+.section3{
+	width: 100%;
+	background-color: var(--deep-sky-blue);
+	padding: 50px 0;
+	text-align: center;
+}
+.section3 h2{
+	font-size: 3.5em;
+	color: var(--white);
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.section3 h2+p{
+	font-size: 2em;
+	color: var(--white);
+	margin-bottom: 50px;
+}
+.section3 .content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.section3 .content input[type="text"]{
+	width: 45%;
+	height: 40px;
+	border-radius: 10px;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	font-size: 1.3em;
+}
+.section3 .content input[type="email"]{
+	width: 45%;
+	height: 40px;
+	border-radius: 10px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	font-size: 1.3em;
+}
+.section3 .content textarea{
+	width: 90%;
+	height: 160px;
+	border-radius: 10px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	font-size: 1.3em;
+}
+.section3 .content input[type="submit"]{
+	width: 200px;
+	height: 60px;
+	font-size: 1.5em;
+	color: var(--white);
+	background-color: var(--light-black);
+	cursor: pointer;
+	border: none;
+	border-radius: 999px;
+}
+.section3 .content input[type="submit"]:hover{
+	background-color: var(--gray);
+	border: 3px solid var(--light-black);
+	transition: background-color 1s;
+}
+.footer{
+	width: 100%;
+	background-color: var(--light-black);
+	padding: 80px 0 30px;
+}
+.footer .content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	border-bottom: 1px solid var(--light-gray);
+}
+.footer .content .box{
+	flex-basis: 250px;
+}
+.footer .content .box h4{
+	font-size: 1.2em;
+	color: var(--white);
+	margin-bottom: 20px;
+}
+.footer .content .box ul a{
+	font-size: 1.1em;
+	color: var(--light-gray);
+	line-height: 40px;
+}
+.footer .content .box ul a:hover{
+	text-decoration: underline;
+}
+.footer .bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.footer .bottom p{
+	font-size: 1.3em;
+	color: var(--gray);
+}
+.footer .bottom .icons{
+	display: flex;
+	margin-top: 10px;
+}
+.footer .bottom a{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+.footer .bottom a[title=facebook]{
+	background: url("../icons/facebook.png");
+}
+.footer .bottom a[title=twitter]{
+	background: url("../icons/twitter.png");
+}
+.footer .bottom a[title=linkedin]{
+	background: url("../icons/linkedin.png");
+}
